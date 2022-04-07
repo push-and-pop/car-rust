@@ -424,6 +424,7 @@ version = "0.1.0"
 dependencies = [
  "actix-web",
  "fast_log",
+ "lazy_static",
  "log",
  "rbatis",
  "serde",

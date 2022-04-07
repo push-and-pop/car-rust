@@ -3,7 +3,7 @@ use actix_web::{get, web, App, HttpServer, Responder};
 async fn greet(name: web::Path<String>) -> impl Responder {
     format!("Hello {name}!")
 }
-mod server;
+use car_rust::server;
 #[actix_web::main] // or #[tokio::main]
 async fn main() -> std::io::Result<()> {
     HttpServer::new(|| App::new().service(greet))
